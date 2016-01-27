@@ -4,7 +4,7 @@ Contributors: andtrev
 Tags: sidebars, sidebar, widget areas, widget, widgets, sidebar columns, widget columns, widget area columns, split sidebar, split widget area, layout, grid, column, columns, row, rows, responsive  
 Requires at least: 3.4  
 Tested up to: 4.1.1  
-Stable tag: 1.0  
+Version: 1.0  
 License: GPLv2  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
