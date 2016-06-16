@@ -3,7 +3,7 @@
  * Plugin Name: Tuxedo Responsive Widget Columns
  * Plugin URI:  https://github.com/andtrev/Tuxedo-Responsive-Widget-Columns
  * Description: Split sidebars and widget areas into responsive columns.
- * Version:     1.0
+ * Version:     1.1
  * Author:      Trevor Anderson
  * Author URI:  https://github.com/andtrev
  * License:     GPLv2 or later
@@ -205,6 +205,7 @@ class TuxedoRespWidgetColumns {
 		static $cur_row = 0;               // Current row (zero-based).
 		static $cur_col_in_row = 1;        // Current column in row.
 		static $cols_per_row = array( 1 ); // Columns per row.
+		static $total_tux_widgets = 0;     // Total row/column widgets.
 		$before = '';
 
 		if ( $sidebar_id != $params[0]['id'] ) {
@@ -215,6 +216,7 @@ class TuxedoRespWidgetColumns {
 			$sidebar_id = $params[0]['id'];
 			$cur_row = 0;
 			$cols_per_row = array( 1 );
+			$total_tux_widgets = 0;
 			foreach ( $sidebar_widgets[$sidebar_id] as $widget_id ) {
 				if ( strpos( $widget_id, 'tux_col' ) !== false ) {
 					if ( $cols_per_row[$cur_row] == 12 ) {
@@ -223,14 +225,20 @@ class TuxedoRespWidgetColumns {
 					} else {
 						$cols_per_row[$cur_row]++;
 					}
+					$total_tux_widgets++;
 				} elseif ( strpos( $widget_id, 'tux_row' ) !== false ) {
 					$cur_row++;
 					$cols_per_row[$cur_row] = 1;
+					$total_tux_widgets++;
 				}
 			}
 			$cur_row = 0;
 			$before = '<div class="tux-row"><div class="tux-col tux-span-1-of-' . $cols_per_row[0] . '">';
 
+		}
+
+		if ( $total_tux_widgets < 1 ) {
+			return $params;
 		}
 
 		if ( strpos( $params[0]['widget_id'], 'tux_row' ) !== false || $cur_col_in_row > 12 ) {

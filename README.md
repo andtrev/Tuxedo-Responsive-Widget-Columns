@@ -1,10 +1,15 @@
 Tuxedo Responsive Widget Columns
 --------------------------------
+
+[![WordPress](https://img.shields.io/wordpress/plugin/dt/tuxedo-responsive-widget-columns.svg?maxAge=2592000)](https://wordpress.org/plugins/tuxedo-responsive-widget-columns/)
+[![WordPress](https://img.shields.io/wordpress/v/tuxedo-responsive-widget-columns.svg?maxAge=2592000)](https://wordpress.org/plugins/tuxedo-responsive-widget-columns/)
+[![WordPress rating](https://img.shields.io/wordpress/plugin/r/tuxedo-responsive-widget-columns.svg?maxAge=2592000)](https://wordpress.org/plugins/tuxedo-responsive-widget-columns/)
+
 Contributors: andtrev  
 Tags: sidebars, sidebar, widget areas, widget, widgets, sidebar columns, widget columns, widget area columns, split sidebar, split widget area, layout, grid, column, columns, row, rows, responsive  
 Requires at least: 3.4  
-Tested up to: 4.1.1  
-Version: 1.0  
+Tested up to: 4.5.2  
+Stable tag: 1.1  
 License: GPLv2  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +30,9 @@ Installation
 
 Changelog
 ---------
+
+### 1.1
+* If no row/column widgets are used TRWC no longer outputs grid wrappers. Themes that have horizontal widget areas built-in should now function properly.
 
 ### 1.0
 * Initial release.
