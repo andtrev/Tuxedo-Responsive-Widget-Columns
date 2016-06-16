@@ -1,9 +1,10 @@
 Tuxedo Responsive Widget Columns
 --------------------------------
 
-[![WordPress](https://img.shields.io/wordpress/plugin/dt/tuxedo-responsive-widget-columns.svg?maxAge=2592000)](https://wordpress.org/plugins/tuxedo-responsive-widget-columns/)
-[![WordPress](https://img.shields.io/wordpress/v/tuxedo-responsive-widget-columns.svg?maxAge=2592000)](https://wordpress.org/plugins/tuxedo-responsive-widget-columns/)
-[![WordPress rating](https://img.shields.io/wordpress/plugin/r/tuxedo-responsive-widget-columns.svg?maxAge=2592000)](https://wordpress.org/plugins/tuxedo-responsive-widget-columns/)
+[![WordPress](https://img.shields.io/wordpress/plugin/dt/tuxedo-responsive-widget-columns.svg?maxAge=600)](https://wordpress.org/plugins/tuxedo-responsive-widget-columns/)
+[![WordPress](https://img.shields.io/wordpress/v/tuxedo-responsive-widget-columns.svg?maxAge=600)](https://wordpress.org/plugins/tuxedo-responsive-widget-columns/)
+[![WordPress rating](https://img.shields.io/wordpress/plugin/r/tuxedo-responsive-widget-columns.svg?maxAge=600)](https://wordpress.org/plugins/tuxedo-responsive-widget-columns/)
+[![WordPress plugin](https://img.shields.io/wordpress/plugin/v/tuxedo-responsive-widget-columns.svg?maxAge=600)](https://wordpress.org/plugins/tuxedo-responsive-widget-columns/)
 
 Contributors: andtrev  
 Tags: sidebars, sidebar, widget areas, widget, widgets, sidebar columns, widget columns, widget area columns, split sidebar, split widget area, layout, grid, column, columns, row, rows, responsive  
